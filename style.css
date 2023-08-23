@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+p {
+  font-size: 18px;
+}
+
+:root {
+  /* Primary colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --light-slate-blue-background: hsl(252, 100%, 67%);
+  /* --light-slate-blue-background: #7857ff; */
+  /* --light-royal-blue-background: #2e2be9; */
+  --light-royal-blue-background: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  /* --violet-blue-circle: #4e21ca; */
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* --light-red-transparent: hsl(0, 100%, 67%); */
+  --light-red-transparent: hsl(0, 50%, 95%);
+  --light-yellow-transparent: hsl(39, 100%, 95%);
+  --light-green-transparent: hsl(166, 100%, 95%);
+  --light-blue-transparent: hsl(234, 85%, 95%);
+
+  --radius: 30px;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  height: 70vh;
+  max-width: 50vw;
+  /* background-color: red; */
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius);
+  box-shadow: 5px 8px 13px 3px var(--pale-blue);
+}
+
+.overview {
+  /* background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 35%); */
+  background: rgb(120, 87, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(46, 43, 233, 1) 70%
+  );
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 3rem 3.5rem;
+  border-radius: var(--radius);
+  width: 50%;
+}
+
+.overview h3,
+.overview h2 {
+  color: var(--pale-blue);
+}
+
+.overview h3:first-child {
+  color: var(--light-lavender);
+  margin-bottom: 2rem;
+}
+
+.circle {
+  /* background-color: var(--violet-blue-circle); */
+  border-radius: 50%;
+  /* width: 200px; */
+  width: 80%;
+  /* height: 350px; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background: rgb(46,43,233);
+  background: linear-gradient(0deg, rgba(46,43,233,1) 1%, rgba(78,33,202,1) 17%);
+}
+
+.score-recap {
+  /* need a gradient background-color */
+  margin-top: 0.8em;
+  color: var(--light-lavender);
+  text-align: center;
+}
+
+.score h4 {
+  text-align: center;
+  color: var(--light-lavender);
+}
+
+.summary {
+  width: 50%;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.summary h3 {
+    color: var(--dark-gray-blue);
+    margin-bottom: 1.5rem;
+}
+
+.summary-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.breakdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 7px;
+}
+
+.image-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.your-score {
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+}
+.total-score {
+  /* --dark-gray-blue: hsl(224, 30%, 27%); */
+  color: hsl(228, 5%, 62%);
+}
+.reaction {
+  color: var(--light-red);
+  background-color: var(--light-red-transparent);
+}
+
+.memory {
+  color: var(--orangey-yellow);
+  background-color: var(--light-yellow-transparent);
+}
+
+.verbal {
+  color: var(--green-teal);
+  background-color: var(--light-green-transparent);
+}
+
+.visual {
+  color: var(--cobalt-blue);
+  background-color: var(--light-blue-transparent);
+}
+
+.summary button {
+  border: none;
+  background: none;
+  color: var(--white);
+  background-color: var(--dark-gray-blue);
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem 5rem;
+  border-radius: 30px;
+}
