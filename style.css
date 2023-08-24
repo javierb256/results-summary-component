@@ -84,7 +84,7 @@ h3 {
 }
 
 .container {
-  height: 70vh;
+  height: 80vh;
   /* background-color: red; */
   display: flex;
   position: absolute;
@@ -277,7 +277,7 @@ h3 {
     
     .container{
         flex-direction: column;
-        width: 100%;
+        width: 101%;
         height: 100%;
         /* border-radius: 0; */
         box-shadow: none;
@@ -292,5 +292,47 @@ h3 {
     .overview,
     .summary {
         width: 100%;
+    }
+
+    .overview {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 3rem 3.5rem;
+    }
+
+    .circle {
+        margin-bottom: 3rem;
+    }
+
+    .breakdown {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .summary-breakdown {
+        margin-bottom: 2rem;
+    }
+
+    .image-title {
+        gap: 10px;
+    }
+
+    .summary button {
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: 1.2rem 1rem;
+    }
+}
+
+@media (max-width: 286px) {
+    .overview {
+        padding: 3rem 2rem;
+    }
+    .breakdown {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-title {
+        gap: 2px;
     }
 }
